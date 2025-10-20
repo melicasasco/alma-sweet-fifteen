@@ -3,6 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import { MapPin, Clock, Shirt, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -385,11 +386,12 @@ export default function QuinceInvitation() {
                       index === currentSlide ? "opacity-100" : "opacity-0"
                     }`}
                   >
-                    <img 
+                    <Image 
                       src={image.url || "/placeholder.svg"} 
                       alt={image.alt} 
-                      className="h-full w-full object-cover object-center" 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      fill
+                      className="object-cover object-center" 
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 ))}

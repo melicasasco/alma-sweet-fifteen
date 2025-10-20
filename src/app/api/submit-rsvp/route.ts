@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
 
-// Configuración de Google Sheets
-const SHEET_ID = "1f0GDZmcwsCu6o5GHl4_mJOL5MCw1srj3kVdmg8cNLkA" // Reemplaza con tu Sheet ID
-const SHEET_NAME = "RSVP" // Nombre de la hoja en tu Google Sheet
-const RANGE = `${SHEET_NAME}!A:B` // Rango donde escribir (columna A: nombre, columna B: timestamp)
+// Configuración de Google Sheets (para uso futuro)
+// const SHEET_ID = "1f0GDZmcwsCu6o5GHl4_mJOL5MCw1srj3kVdmg8cNLkA"
+// const SHEET_NAME = "RSVP"
+// const RANGE = `${SHEET_NAME}!A:B`
 
 export async function POST(request: Request) {
   try {
