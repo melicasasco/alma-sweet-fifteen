@@ -20,6 +20,28 @@ export const metadata: Metadata = {
   title: "Invitación Mis 15 Años",
   description: "Te invito a celebrar mis 15 años",
   generator: "v0.app",
+  openGraph: {
+    title: "Invitación Mis 15 Años",
+    description: "Te invito a celebrar mis 15 años",
+    url: "https://alma-sweet-fifteen.netlify.app",
+    siteName: "Invitación Mis 15 Años",
+    images: [
+      {
+        url: "/images/elegant-quinceanera.png",
+        width: 1200,
+        height: 630,
+        alt: "Invitación de Quinceañera",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Invitación Mis 15 Años",
+    description: "Te invito a celebrar mis 15 años",
+    images: ["/images/elegant-quinceanera.png"],
+  },
 }
 
 export default function RootLayout({
