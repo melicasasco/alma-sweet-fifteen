@@ -427,7 +427,7 @@ export default function QuinceInvitation() {
               </div>
               <h3 className="font-semibold text-lg text-white group-hover:text-purple-200 transition-colors duration-300">📅 Fecha</h3>
               <p className="text-slate-300 leading-relaxed">
-                <span className="font-semibold text-white text-lg">18 de Diciembre de 2025</span>
+                <span className="font-semibold text-white text-lg">20 de Diciembre de 2025</span>
                 <br />
                 <span className="text-sm bg-purple-500/20 px-2 py-1 rounded-full">🎉 Sábado</span>
               </p>
