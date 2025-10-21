@@ -337,3 +337,144 @@
 .animate-bounce-slow {
   animation: bounce-slow 2s ease-in-out infinite;
 }
+
+/* Animación plateada para el fondo */
+
+@keyframes plateado-particles {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes plateado-glow {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+@keyframes glitter-move {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 200px 200px, 300px 300px, 250px 250px, 180px 180px, 220px 220px;
+  }
+}
+
+@keyframes disco-ball-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(180deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(270deg);
+  }
+}
+
+/* Clase para el fondo plateado animado con purpurina y bolas de discoteca */
+.fondo-plateado {
+  background-image: url('/fondo-plateado2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Purpurina plateada animada */
+.fondo-plateado::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.8), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.6), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.9), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.7), transparent),
+    radial-gradient(2px 2px at 160px 30px, rgba(255, 255, 255, 0.5), transparent);
+  background-repeat: repeat;
+  background-size: 200px 200px, 300px 300px, 250px 250px, 180px 180px, 220px 220px;
+  animation: glitter-move 4s linear infinite;
+}
+
+/* Bolas de discoteca flotantes */
+.fondo-plateado::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.9) 0%, 
+    rgba(255, 255, 255, 0.6) 20%, 
+    rgba(200, 200, 200, 0.4) 40%, 
+    rgba(150, 150, 150, 0.2) 60%, 
+    transparent 100%);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: disco-ball-float 6s ease-in-out infinite;
+}
+
+/* Segunda bola de discoteca */
+.fondo-plateado .disco-ball-2 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 45px;
+  height: 45px;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.8) 0%, 
+    rgba(255, 255, 255, 0.5) 25%, 
+    rgba(200, 200, 200, 0.3) 50%, 
+    rgba(150, 150, 150, 0.1) 75%, 
+    transparent 100%);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.4),
+    inset 0 0 15px rgba(255, 255, 255, 0.2);
+  animation: disco-ball-float 8s ease-in-out infinite reverse;
+}
+
+/* Tercera bola de discoteca */
+.fondo-plateado .disco-ball-3 {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  width: 35px;
+  height: 35px;
+  background: radial-gradient(circle at 30% 30%, 
+    rgba(255, 255, 255, 0.7) 0%, 
+    rgba(255, 255, 255, 0.4) 30%, 
+    rgba(200, 200, 200, 0.2) 60%, 
+    transparent 100%);
+  border-radius: 50%;
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.3),
+    inset 0 0 10px rgba(255, 255, 255, 0.1);
+  animation: disco-ball-float 7s ease-in-out infinite;
+}
