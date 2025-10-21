@@ -372,7 +372,7 @@ export default function QuinceInvitation() {
       {/* Main content */}
       <div className="relative z-20 flex min-h-screen flex-col items-center justify-center px-4 py-20">
         <div className="w-full max-w-4xl space-y-12 text-center animate-fade-in">
-          <div className="space-y-4 pt-16 animate-slide-up">
+          <div className="space-y-4 pt-16 animate-slide-up  ">
             <h1 className="font-serif text-6xl font-normal tracking-wide text-black md:text-7xl lg:text-8xl text-balance drop-shadow-lg animate-pulse-slow">
               ¡Te invito a mis 15!
             </h1>
@@ -380,7 +380,7 @@ export default function QuinceInvitation() {
           </div>
 
           <div id="alma" className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-600/50 overflow-hidden hover:scale-105 transition-transform duration-300">
+            {/* <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-600/50 overflow-hidden hover:scale-105 transition-transform duration-300">
               <div className="relative w-full h-[500px] overflow-hidden">
                 {carouselImages.map((image, index) => (
                   <div
@@ -401,7 +401,7 @@ export default function QuinceInvitation() {
 
 
               </div>
-            </Card>
+            </Card> */}
           </div>
 
           <div id="festejemos" className="grid gap-6 md:grid-cols-3 animate-slide-up" style={{ animationDelay: "0.4s" }}>
@@ -452,7 +452,7 @@ export default function QuinceInvitation() {
           </div>
 
           <div id="te-espero" className="py-6 animate-slide-up" style={{ animationDelay: "0.8s" }}>
-            <p className="font-serif text-4xl text-white md:text-5xl text-balance drop-shadow-lg animate-pulse-slow">Te espero</p>
+            <p className="font-serif text-4xl text-black md:text-5xl text-balance drop-shadow-lg animate-pulse-slow">Te espero</p>
           </div>
 
           <div id="asistencia" className="animate-slide-up" style={{ animationDelay: "1s" }}>
