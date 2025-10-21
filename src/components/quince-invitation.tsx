@@ -376,7 +376,7 @@ export default function QuinceInvitation() {
             <h1 className="font-serif text-6xl font-normal tracking-wide text-black md:text-7xl lg:text-8xl text-balance drop-shadow-lg animate-pulse-slow">
               ¡Te invito a mis 15!
             </h1>
-            <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-slate-300 to-transparent animate-expand" />
+            <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-black/30 to-transparent animate-expand" />
           </div>
 
           <div id="alma" className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
@@ -452,7 +452,7 @@ export default function QuinceInvitation() {
           </div>
 
           <div id="te-espero" className="py-6 animate-slide-up" style={{ animationDelay: "0.8s" }}>
-            <p className="font-serif text-4xl text-black md:text-5xl text-balance drop-shadow-lg animate-pulse-slow">Te espero</p>
+            <p className="font-serif text-6xl text-black md:text-5xl text-balance drop-shadow-lg animate-pulse-slow">Te espero</p>
           </div>
 
           <div id="asistencia" className="animate-slide-up" style={{ animationDelay: "1s" }}>
